@@ -1,13 +1,102 @@
-*{
+//右侧购物车
+.right_crst{
+    width: 40px;
+    height: 100%;
+    position: fixed;
+    background: #000000;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    .a{
+        width: 40px;
+        height:90px;
+        display: block;
+        .a_i{
+            background-position: 0px -29px;
+            width: 40px;
+            height: 29px;
+            top: 174px;
+            left: 0;
+            display: inline-block;
+            background: url(../img/ibar_sprites.png) no-repeat 10px -22px;
+            cursor: pointer;
+            vertical-align: top;
+            position: absolute;
+        }
+        .a_span{
+                width: 16px;
+                display: block;
+                height: 62px;
+                margin: 203px 0 0 12px;
+                cursor: pointer;
+                color:#fff;
+                font-size: 12px;
+            }
+         &:hover{
+             background:#fd7400;
+             .a_i{
+                 background:#fd7400 url(../img/ibar_sprites.png) no-repeat 10px -22px;
+             }
+         } 
+         .a_span_2{
+                width: 21px;
+                height: 21px;
+                display: block;
+                border-radius: 50%;
+                background: #fd7400;
+                text-align: center;
+                line-height: 21px;
+                margin: -5px 0 0 9px;
+                cursor: pointer;
+                color: #fff;
+         }
+     }  
+}
+//轮播图样式
+.dx-container {
+    border:1px solid;
+    height:400px;
+}
+
+.dx-container .imgs {
     margin: 0;
     padding: 0;
-}
-body{
-    background: yellow;
-}
-a{
-    text-decoration:none;
-}
-ul{
+    position: relative;
     list-style: none;
+    height: 100%;
+}
+.dx-container .imgs img{
+    width: 100%;
+}
+.dx-container .imgs li {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top:0;
+    left: 0;
+    display: none;
+}
+.dx-container .imgs li a{
+    display: inline-block;
+    width:100%;
+    height: 100%;
+}
+.dx-container .pages {
+    height: 30px;;
+    position: absolute;
+    top:340px;
+    left: 45%;
+}
+.dx-container .pages i {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    margin:10px;
+    cursor: pointer;
+//background-image: url(../img/banner-kong.png) ;
+}
+.dx-container .pages i.current {
+    background: #fd7400;
 }
